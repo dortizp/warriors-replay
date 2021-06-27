@@ -20,7 +20,7 @@ Each character will have these stats:
 
 Also the character will have different attacks depending on its type.
 
-There are four types of dragons (lockheed, drogon, godzilla and smaug) with which you can fight, which you can touch randomly one of them.
+There are four types of dragons (Lockheed, Drogon, Godzilla and Smaug) with which you can fight, which you can touch randomly one of them.
 
 ## Attacks
 
