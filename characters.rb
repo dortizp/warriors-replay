@@ -1,3 +1,4 @@
+# rubocop:disable all
 module Catalog
   CHARACTERS = {
     "warrior" => {
@@ -38,3 +39,4 @@ module Catalog
     }
   }.freeze
 end
+# rubocop:enable all
