@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative 'moves'
 require_relative 'characters'
 # select_random_dragon
 class Bot
@@ -9,4 +10,12 @@ class Bot
     select_dragon = select_key_dragon.sample
     puts select_dragon
   end
+
+  def select_random_move
+    select_move = Catalog::MOVES.select { |move, _stats| move }
+    puts select_move.keys.sample
+  end
 end
+
+start = Bot.new
+start.select_random_move
