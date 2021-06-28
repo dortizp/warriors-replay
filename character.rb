@@ -23,4 +23,17 @@ class Character
     @current_move = Catalog::MOVES[move]
     puts @current_move
   end
+
+  def fainted?
+    !@hp.positive?
+  end
+
+  def attack(opponent)
+    damage = @current_move[:damage]
+    opponent.receive_damage(damage)
+  end
+
+  def receive_damage(damage)
+    @hp -= damage
+  end
 end
