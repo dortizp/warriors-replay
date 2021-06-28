@@ -27,4 +27,13 @@ class Character
   def fainted?
     !@hp.positive?
   end
+
+  def attack(opponent)
+    damage = @current_move[:damage]
+    opponent.receive_damage(damage)
+  end
+
+  def receive_damage(damage)
+    @hp -= damage
+  end
 end
