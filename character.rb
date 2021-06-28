@@ -23,4 +23,8 @@ class Character
     @current_move = Catalog::MOVES[move]
     puts @current_move
   end
+
+  def fainted?
+    !@hp.positive?
+  end
 end
